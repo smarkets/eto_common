@@ -1,0 +1,54 @@
+.module eto
+
+.record [
+  .name message
+  .field [
+    .name seq
+    .type int
+  ]
+  .field [
+    .name payload 
+    .type message-payload
+  ]
+  .field [
+    .name replay
+    .type bool
+    .optional
+    .default false
+  ]
+]
+
+.variant [
+  .name message-payload
+  .option [ .name ping ]
+  .option [ .name pong ]
+  .option [ .name gapfill ]
+  .option [ .name replay .type replay-payload ]
+  .option [ .name login .type login-payload ]
+  .option [ .name login-response .type login-response-payload ]
+]
+
+.record [
+  .name replay-payload
+  .field [
+    .name seq
+    .type int
+  ]
+]
+
+.record [
+  .name login-payload
+  .field [
+    .name session
+    .type string
+    .optional
+  ]
+]
+
+.record [
+  .name login-response-payload
+  .field [
+    .name session
+    .type string
+  ]
+]
