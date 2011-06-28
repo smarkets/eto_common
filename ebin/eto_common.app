@@ -1,4 +1,5 @@
 {application, eto_common, [
   {description, "common files for all eto development"},
-  {vsn, "0"}
+  {vsn, "0"},
+  {modules, []}
 ]}.
