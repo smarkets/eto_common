@@ -40,7 +40,7 @@
   .name login-payload
   .field [
     .name session
-    .type string
+    .type binary
     .optional
   ]
 ]
@@ -49,6 +49,6 @@
   .name login-response-payload
   .field [
     .name session
-    .type string
+    .type binary
   ]
 ]
