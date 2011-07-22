@@ -2,6 +2,7 @@
 
 .record [
   .name message
+  .proto-name "seq_message"
   .field [
     .type seq
   ]
