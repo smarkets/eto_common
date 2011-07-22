@@ -3,12 +3,10 @@
 .record [
   .name message
   .field [
-    .name seq
-    .type int
+    .type seq
   ]
   .field [
-    .name payload 
-    .type message-payload
+    .type payload 
   ]
   .field [
     .name replay
@@ -19,25 +17,24 @@
 ]
 
 .variant [
-  .name message-payload
+  .name payload
   .option [ .name ping ]
   .option [ .name pong ]
   .option [ .name gapfill ]
-  .option [ .name replay .type replay-payload ]
-  .option [ .name login .type login-payload ]
-  .option [ .name login-response .type login-response-payload ]
+  .option [ .type replay ]
+  .option [ .type login ]
+  .option [ .type login-response ]
 ]
 
 .record [
-  .name replay-payload
+  .name replay
   .field [
-    .name seq
-    .type int
+    .type seq
   ]
 ]
 
 .record [
-  .name login-payload
+  .name login
   .field [
     .name session
     .type binary
@@ -46,11 +43,15 @@
 ]
 
 .record [
-  .name login-response-payload
+  .name login-response
   .field [
     .name session
     .type binary
   ]
+]
+.alias [
+  .name seq
+  .type int
 ]
 
 .alias [
