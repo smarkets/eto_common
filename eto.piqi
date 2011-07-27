@@ -49,6 +49,11 @@
     .name session
     .type binary
   ]
+  .field [
+    .name reset
+    .type seq
+    .optional
+  ]
 ]
 .alias [
   .name seq
