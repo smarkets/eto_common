@@ -1,5 +1,10 @@
 .module eto
 
+.variant [
+  .name frame
+  .option [ .type message ]
+]
+
 .record [
   .name message
   .proto-name "seq_message"
