@@ -7,7 +7,7 @@
     .type seq
   ]
   .field [
-    .type payload 
+    .type payload
   ]
   .field [
     .name replay
