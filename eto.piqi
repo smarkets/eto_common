@@ -1,18 +1,17 @@
 .module eto
 
 .variant [
-  .name frame
-  .option [ .type message ]
+  .name payload
+  .option [ .type sequenced ]
 ]
 
 .record [
-  .name message
-  .proto-name "seq_message"
+  .name sequenced
   .field [
     .type seq
   ]
   .field [
-    .type payload
+    .type message
   ]
   .field [
     .name replay
@@ -23,7 +22,8 @@
 ]
 
 .variant [
-  .name payload
+  .name message
+  .proto-name "message_data"
   .option [ .name ping ]
   .option [ .name pong ]
   .option [ .name gapfill ]
