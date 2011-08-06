@@ -27,9 +27,11 @@
   .option [ .name ping ]
   .option [ .name pong ]
   .option [ .name gapfill ]
+  .option [ .name heartbeat ]
   .option [ .type replay ]
   .option [ .type login ]
   .option [ .type login-response ]
+  .option [ .type logout ]
 ]
 
 .record [
@@ -60,12 +62,22 @@
     .optional
   ]
 ]
-.alias [
-  .name seq
-  .type int
+
+.record [
+  .name logout
+  .field [
+    .name reason
+    .type logout-reason
+    .optional
+  ]
+]
+.enum [
+  .name logout-reason
+  .option [ .name heartbeat-timeout ]
+  .option [ .name comfirmation ]
 ]
 
 .alias [
-  .name ts
-  .type float
+  .name seq
+  .type int
 ]
