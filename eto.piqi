@@ -74,7 +74,7 @@
 .enum [
   .name logout-reason
   .option [ .name heartbeat-timeout ]
-  .option [ .name comfirmation ]
+  .option [ .name confirmation ]
 ]
 
 .alias [
