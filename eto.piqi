@@ -79,5 +79,5 @@
 
 .alias [
   .name seq
-  .type int
+  .type uint64
 ]
