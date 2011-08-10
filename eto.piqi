@@ -56,38 +56,38 @@
 
 .enum [
     .name payload-type
-    .proto-name "Payload_Type"
+    .proto-name "PayloadType"
     .option [
         .name ping
-        .proto-name "Payload_PING"
+        .proto-name "PAYLOAD_PING"
     ]
     .option [
         .name pong
-        .proto-name "Payload_PONG"
+        .proto-name "PAYLOAD_PONG"
     ]
     .option [
         .name gapfill
-        .proto-name "Payload_GAPFILL"
+        .proto-name "PAYLOAD_GAPFILL"
     ]
     .option [
         .name heartbeat
-        .proto-name "Payload_HEARTBEAT"
+        .proto-name "PAYLOAD_HEARTBEAT"
     ]
     .option [
         .name replay
-        .proto-name "Payload_REPLAY"
+        .proto-name "PAYLOAD_REPLAY"
     ]
     .option [
         .name login
-        .proto-name "Payload_LOGIN"
+        .proto-name "PAYLOAD_LOGIN"
     ]
     .option [
         .name login-response
-        .proto-name "Payload_LOGIN_RESPONSE"
+        .proto-name "PAYLOAD_LOGIN_RESPONSE"
     ]
     .option [
         .name logout
-        .proto-name "Payload_LOGOUT"
+        .proto-name "PAYLOAD_LOGOUT"
     ]
 ]
 
@@ -133,17 +133,17 @@
 
 .enum [
     .name logout-reason
-    .proto-name "Logout_Reason"
+    .proto-name "LogoutReason"
     .option [
         .name none
-        .proto-name "Logout_NONE"
+        .proto-name "LOGOUT_NONE"
     ]
     .option [
         .name heartbeat-timeout
-        .proto-name "Logout_HEARTBEAT_TIMEOUT"
+        .proto-name "LOGOUT_HEARTBEAT_TIMEOUT"
     ]
     .option [
         .name confirmation
-        .proto-name "Logout_CONFIRMATION"
+        .proto-name "LOGOUT_CONFIRMATION"
     ]
 ]
