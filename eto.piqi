@@ -20,6 +20,7 @@
     .field [
         .name type
         .type payload-type
+        .optional
     ]
     .field [
         .name is-replay
