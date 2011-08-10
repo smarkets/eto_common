@@ -12,30 +12,20 @@
 ]
 
 .record [
-    .name sequenced
-    .proto-name "Sequenced"
+    .name payload
+    .proto-name "Payload"
     .field [
         .type seq
     ]
     .field [
-        .name payload
-        .type payload
-        .optional
+        .name type
+        .type payload-type
     ]
     .field [
-        .name replay
+        .name is_replay
         .type bool
         .optional
         .default false
-    ]
-]
-
-.record [
-    .name payload
-    .proto-name "Payload"
-    .field [
-        .name type
-        .type payload-type
     ]
     .field [
         .name replay
