@@ -18,6 +18,7 @@
         .type seq
     ]
     .field [
+        .name payload
         .type payload
         .optional
     ]
@@ -37,18 +38,22 @@
         .type payload-type
     ]
     .field [
+        .name replay
         .type replay
         .optional
     ]
     .field [
+        .name login
         .type login
         .optional
     ]
     .field [
+        .name login-response
         .type login-response
         .optional
     ]
     .field [
+        .name logout
         .type logout
         .optional
     ]
