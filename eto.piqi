@@ -54,6 +54,10 @@
     .name payload-type
     .proto-name "PayloadType"
     .option [
+        .name none
+        .proto-name "PAYLOAD_NONE"
+    ]
+   .option [
         .name ping
         .proto-name "PAYLOAD_PING"
     ]
