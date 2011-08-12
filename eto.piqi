@@ -104,7 +104,6 @@
     .proto-name "Login"
     .field [
         .type session-id
-        .optional
     ]
 ]
 
