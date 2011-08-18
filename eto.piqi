@@ -7,7 +7,7 @@
 ]
 
 .alias [
-    .name session-id
+    .name session
     .type string
 ]
 
@@ -103,7 +103,7 @@
     .name login
     .proto-name "Login"
     .field [
-        .type session-id
+        .type session
     ]
 ]
 
@@ -111,7 +111,7 @@
     .name login-response
     .proto-name "LoginResponse"
     .field [
-        .type session-id
+        .type session
     ]
     .field [
         .name reset
