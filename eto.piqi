@@ -145,4 +145,12 @@
         .name confirmation
         .proto-name "LOGOUT_CONFIRMATION"
     ]
+    .option [
+        .name login-timeout
+        .proto-name "LOGOUT_LOGIN_TIMEOUT"
+    ]
+    .option [
+        .name login-not-first-seq
+        .proto-name "LOGOUT_LOGIN_NOT_FIRST_SEQ"
+    ]
 ]
