@@ -1,3 +1,6 @@
+proto:
+	piqi to-proto eto.piqi -o eto.piqi.proto
+
 github:
 	git push origin github-master
 	git push github github-master:master
