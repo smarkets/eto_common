@@ -153,4 +153,16 @@
         .name login-not-first-seq
         .proto-name "LOGOUT_LOGIN_NOT_FIRST_SEQ"
     ]
+    .option [
+        .name unknown-session
+        .proto-name "LOGOUT_UNKNOWN_SESSION"
+    ]
+    .option [
+        .name unauthorised
+        .proto-name "LOGOUT_UNAUTHORISED"
+    ]
+    .option [
+        .name service-temporarily-unavailable
+        .proto-name "LOGOUT_SERVICE_TEMPORARILY_UNAVAILABLE"
+    ]
 ]
