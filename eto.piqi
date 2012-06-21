@@ -48,6 +48,11 @@
         .type logout
         .optional
     ]
+    .field [
+        .name downtime-alert
+        .type downtime-alert
+        .optional
+    ]
 ]
 
 .enum [
@@ -164,5 +169,32 @@
     .option [
         .name service-temporarily-unavailable
         .proto-name "LOGOUT_SERVICE_TEMPORARILY_UNAVAILABLE"
+    ]
+    .option [
+        .name downtime
+        .proto-name "LOGOUT_DOWNTIME"
+    ]
+]
+
+.record [
+    .name downtime-alert
+    .proto-name "DowntimeAlert"
+    .field [
+        .name type
+        .type downtime-alert-type
+        .optional
+    ]
+]
+
+.enum [
+    .name downtime-alert-type
+    .proto-name "DowntimeAlertType"
+    .option [
+        .name connection
+        .proto-name "DOWNTIME_ALERT_CONNECTION"
+    ]
+    .option [
+        .name functionality
+        .proto-name "DOWNTIME_ALERT_FUNCTIONALITY"
     ]
 ]
