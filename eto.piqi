@@ -94,6 +94,10 @@
         .name logout
         .proto-name "PAYLOAD_LOGOUT"
     ]
+    .option [
+        .name downtime-alert
+        .proto-name "PAYLOAD_DOWNTIME_ALERT"
+    ]
 ]
 
 .record [
@@ -196,5 +200,9 @@
     .option [
         .name functionality
         .proto-name "DOWNTIME_ALERT_FUNCTIONALITY"
+    ]
+    .option [
+        .name cancelled
+        .proto-name "DOWNTIME_ALERT_CANCELLED"
     ]
 ]
