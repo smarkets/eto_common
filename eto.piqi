@@ -188,6 +188,11 @@
         .type downtime-alert-type
         .optional
     ]
+    .field [
+        .name datetime
+        .type datetime
+        .optional
+    ]
 ]
 
 .enum [
@@ -204,5 +209,48 @@
     .option [
         .name cancelled
         .proto-name "DOWNTIME_ALERT_CANCELLED"
+    ]
+]
+
+.record [  
+    .name date
+    .proto-name "Date"
+    .field [
+        .name year 
+        .type uint32
+    ]    
+    .field [
+        .name month
+        .type uint32
+    ]    
+    .field [
+        .name day
+        .type uint32
+    ]    
+]
+
+.record [  
+    .name time 
+    .proto-name "Time"
+    .field [
+        .name hour 
+        .type uint32
+    ]    
+    .field [
+        .name minute
+        .type uint32
+    ]
+]
+
+.record [
+    .name datetime
+    .proto-name "DateTime"
+    .field [
+        .name date
+        .type date
+    ]
+    .field [
+        .name time
+        .type time
     ]
 ]
