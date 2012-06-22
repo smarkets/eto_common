@@ -193,6 +193,11 @@
         .type datetime
         .optional
     ]
+    .field [
+        .name description
+        .type string
+        .optional
+    ]
 ]
 
 .enum [
