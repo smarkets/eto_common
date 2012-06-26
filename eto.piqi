@@ -215,6 +215,10 @@
         .name cancelled
         .proto-name "DOWNTIME_ALERT_CANCELLED"
     ]
+    .option [
+        .name service-resumed
+        .proto-name "DOWNTIME_ALERT_SERVICE_RESUMED"
+    ]
 ]
 
 .record [  
