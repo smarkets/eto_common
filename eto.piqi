@@ -98,6 +98,10 @@
         .name downtime-alert
         .proto-name "PAYLOAD_DOWNTIME_ALERT"
     ]
+    .option [
+        .name throttle-exceeded
+        .proto-name "PAYLOAD_THROTTLE_EXCEEDED"
+    ]
 ]
 
 .record [
