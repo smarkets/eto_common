@@ -13,7 +13,7 @@
 
 .record [
     .name payload
-    .proto-name "Payload"
+    .protobuf-name "Payload"
     .field [
         .type seq
     ]
@@ -57,56 +57,56 @@
 
 .enum [
     .name payload-type
-    .proto-name "PayloadType"
+    .protobuf-name "PayloadType"
     .option [
         .name none
-        .proto-name "PAYLOAD_NONE"
+        .protobuf-name "PAYLOAD_NONE"
     ]
    .option [
         .name ping
-        .proto-name "PAYLOAD_PING"
+        .protobuf-name "PAYLOAD_PING"
     ]
     .option [
         .name pong
-        .proto-name "PAYLOAD_PONG"
+        .protobuf-name "PAYLOAD_PONG"
     ]
     .option [
         .name gapfill
-        .proto-name "PAYLOAD_GAPFILL"
+        .protobuf-name "PAYLOAD_GAPFILL"
     ]
     .option [
         .name heartbeat
-        .proto-name "PAYLOAD_HEARTBEAT"
+        .protobuf-name "PAYLOAD_HEARTBEAT"
     ]
     .option [
         .name replay
-        .proto-name "PAYLOAD_REPLAY"
+        .protobuf-name "PAYLOAD_REPLAY"
     ]
     .option [
         .name login
-        .proto-name "PAYLOAD_LOGIN"
+        .protobuf-name "PAYLOAD_LOGIN"
     ]
     .option [
         .name login-response
-        .proto-name "PAYLOAD_LOGIN_RESPONSE"
+        .protobuf-name "PAYLOAD_LOGIN_RESPONSE"
     ]
     .option [
         .name logout
-        .proto-name "PAYLOAD_LOGOUT"
+        .protobuf-name "PAYLOAD_LOGOUT"
     ]
     .option [
         .name downtime-alert
-        .proto-name "PAYLOAD_DOWNTIME_ALERT"
+        .protobuf-name "PAYLOAD_DOWNTIME_ALERT"
     ]
     .option [
         .name throttle-exceeded
-        .proto-name "PAYLOAD_THROTTLE_EXCEEDED"
+        .protobuf-name "PAYLOAD_THROTTLE_EXCEEDED"
     ]
 ]
 
 .record [
     .name replay
-    .proto-name "Replay"
+    .protobuf-name "Replay"
     .field [
         .type seq
     ]
@@ -114,7 +114,7 @@
 
 .record [
     .name login
-    .proto-name "Login"
+    .protobuf-name "Login"
     .field [
         .type session
     ]
@@ -122,7 +122,7 @@
 
 .record [
     .name login-response
-    .proto-name "LoginResponse"
+    .protobuf-name "LoginResponse"
     .field [
         .type session
     ]
@@ -135,7 +135,7 @@
 
 .record [
     .name logout
-    .proto-name "Logout"
+    .protobuf-name "Logout"
     .field [
         .name reason
         .type logout-reason
@@ -145,48 +145,48 @@
 
 .enum [
     .name logout-reason
-    .proto-name "LogoutReason"
+    .protobuf-name "LogoutReason"
     .option [
         .name none
-        .proto-name "LOGOUT_NONE"
+        .protobuf-name "LOGOUT_NONE"
     ]
     .option [
         .name heartbeat-timeout
-        .proto-name "LOGOUT_HEARTBEAT_TIMEOUT"
+        .protobuf-name "LOGOUT_HEARTBEAT_TIMEOUT"
     ]
     .option [
         .name confirmation
-        .proto-name "LOGOUT_CONFIRMATION"
+        .protobuf-name "LOGOUT_CONFIRMATION"
     ]
     .option [
         .name login-timeout
-        .proto-name "LOGOUT_LOGIN_TIMEOUT"
+        .protobuf-name "LOGOUT_LOGIN_TIMEOUT"
     ]
     .option [
         .name login-not-first-seq
-        .proto-name "LOGOUT_LOGIN_NOT_FIRST_SEQ"
+        .protobuf-name "LOGOUT_LOGIN_NOT_FIRST_SEQ"
     ]
     .option [
         .name unknown-session
-        .proto-name "LOGOUT_UNKNOWN_SESSION"
+        .protobuf-name "LOGOUT_UNKNOWN_SESSION"
     ]
     .option [
         .name unauthorised
-        .proto-name "LOGOUT_UNAUTHORISED"
+        .protobuf-name "LOGOUT_UNAUTHORISED"
     ]
     .option [
         .name service-temporarily-unavailable
-        .proto-name "LOGOUT_SERVICE_TEMPORARILY_UNAVAILABLE"
+        .protobuf-name "LOGOUT_SERVICE_TEMPORARILY_UNAVAILABLE"
     ]
     .option [
         .name downtime
-        .proto-name "LOGOUT_DOWNTIME"
+        .protobuf-name "LOGOUT_DOWNTIME"
     ]
 ]
 
 .record [
     .name downtime-alert
-    .proto-name "DowntimeAlert"
+    .protobuf-name "DowntimeAlert"
     .field [
         .name type
         .type downtime-alert-type
@@ -206,28 +206,28 @@
 
 .enum [
     .name downtime-alert-type
-    .proto-name "DowntimeAlertType"
+    .protobuf-name "DowntimeAlertType"
     .option [
         .name connection
-        .proto-name "DOWNTIME_ALERT_CONNECTION"
+        .protobuf-name "DOWNTIME_ALERT_CONNECTION"
     ]
     .option [
         .name functionality
-        .proto-name "DOWNTIME_ALERT_FUNCTIONALITY"
+        .protobuf-name "DOWNTIME_ALERT_FUNCTIONALITY"
     ]
     .option [
         .name cancelled
-        .proto-name "DOWNTIME_ALERT_CANCELLED"
+        .protobuf-name "DOWNTIME_ALERT_CANCELLED"
     ]
     .option [
         .name service-resumed
-        .proto-name "DOWNTIME_ALERT_SERVICE_RESUMED"
+        .protobuf-name "DOWNTIME_ALERT_SERVICE_RESUMED"
     ]
 ]
 
 .record [  
     .name date
-    .proto-name "Date"
+    .protobuf-name "Date"
     .field [
         .name year 
         .type uint32
@@ -244,7 +244,7 @@
 
 .record [  
     .name time 
-    .proto-name "Time"
+    .protobuf-name "Time"
     .field [
         .name hour 
         .type uint32
@@ -257,7 +257,7 @@
 
 .record [
     .name datetime
-    .proto-name "DateTime"
+    .protobuf-name "DateTime"
     .field [
         .name date
         .type date
