@@ -48,11 +48,6 @@
         .type logout
         .optional
     ]
-    .field [
-        .name downtime-alert
-        .type downtime-alert
-        .optional
-    ]
 ]
 
 .enum [
@@ -93,10 +88,6 @@
     .option [
         .name logout
         .protobuf-name "PAYLOAD_LOGOUT"
-    ]
-    .option [
-        .name downtime-alert
-        .protobuf-name "PAYLOAD_DOWNTIME_ALERT"
     ]
     .option [
         .name throttle-exceeded
@@ -185,70 +176,29 @@
 ]
 
 .record [
-    .name downtime-alert
-    .protobuf-name "DowntimeAlert"
-    .field [
-        .name type
-        .type downtime-alert-type
-        .optional
-    ]
-    .field [
-        .name datetime
-        .type datetime
-        .optional
-    ]
-    .field [
-        .name description
-        .type string
-        .optional
-    ]
-]
-
-.enum [
-    .name downtime-alert-type
-    .protobuf-name "DowntimeAlertType"
-    .option [
-        .name connection
-        .protobuf-name "DOWNTIME_ALERT_CONNECTION"
-    ]
-    .option [
-        .name functionality
-        .protobuf-name "DOWNTIME_ALERT_FUNCTIONALITY"
-    ]
-    .option [
-        .name cancelled
-        .protobuf-name "DOWNTIME_ALERT_CANCELLED"
-    ]
-    .option [
-        .name service-resumed
-        .protobuf-name "DOWNTIME_ALERT_SERVICE_RESUMED"
-    ]
-]
-
-.record [  
     .name date
     .protobuf-name "Date"
     .field [
-        .name year 
+        .name year
         .type uint32
-    ]    
+    ]
     .field [
         .name month
         .type uint32
-    ]    
+    ]
     .field [
         .name day
         .type uint32
-    ]    
+    ]
 ]
 
-.record [  
-    .name time 
+.record [
+    .name time
     .protobuf-name "Time"
     .field [
-        .name hour 
+        .name hour
         .type uint32
-    ]    
+    ]
     .field [
         .name minute
         .type uint32
