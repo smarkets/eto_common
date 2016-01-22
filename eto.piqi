@@ -122,6 +122,16 @@
         .type uint64
         .optional
     ]
+    .field [
+        .name email
+        .type string
+        .optional
+    ]
+    .field [
+        .name id
+        .type uint64
+        .optional
+    ]
 ]
 
 .record [
