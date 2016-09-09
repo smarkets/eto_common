@@ -183,6 +183,10 @@
         .name downtime
         .protobuf-name "LOGOUT_DOWNTIME"
     ]
+    .option [
+        .name unverified
+        .protobuf-name "LOGOUT_UNVERIFIED"
+    ]
 ]
 
 .record [
