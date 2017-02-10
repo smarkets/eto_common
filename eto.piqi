@@ -1,5 +1,5 @@
 .module eto
-.proto-package "smarkets.eto"
+.protobuf-package "smarkets.eto"
 
 .alias [
     .name seq
